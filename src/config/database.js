@@ -5,7 +5,7 @@ const testePath = path.join(__dirname, '../data/teste.json');
 
 function readJsonFile(path) {
     const data = fs.readFileSync(path, 'UTF-8');
-    return JSON.parse(data.toString());
+    return JSON.parse(data.toString()); 
 }
 
 function writeJsonFile(path, data) {
